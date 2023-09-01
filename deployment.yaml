@@ -6,7 +6,7 @@ metadata:
 spec:
   strategy:
     type: Recreate
-  replicas: 2
+  replicas: 4
   selector: 
     matchLabels:
       type: app
@@ -19,10 +19,10 @@ spec:
       containers:
         - name: co1
           image: nginx
-      resources:
-      requests:
-        memory: 10Mi
-        cpu: 10M
-      limits: 
-        memory: 30M
-        cpu: 200M 
+      # resources:
+      # requests:
+      #   memory: 10Mi
+      #   cpu: 10M
+      # limits: 
+      #   memory: 30M
+      #   cpu: 200M 
